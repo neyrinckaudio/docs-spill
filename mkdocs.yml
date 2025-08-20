@@ -1,0 +1,29 @@
+site_name: Spill User Guide
+site_description: User Guide for Spill.
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - toc.integrate
+plugins:
+  - include-markdown
+nav:
+  - Spill:
+      - Welcome To Spill: './index.md'
+      - Quick Start Guide: './quick-start-guide.md'
+      - Installation And Setup: './install-and-setup.md'
+      - Activating the License: './licensing.md'
+      - Using the spill/guide Plug-In: './usage.md'
+
+markdown_extensions:
+  - attr_list
+  - meta
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
