@@ -1,5 +1,6 @@
 site_name: Spill User Guide
 site_description: User Guide for Spill.
+site_url: https://docs.neyrinck.com/spill/
 
 theme:
   name: material
